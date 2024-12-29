@@ -1,0 +1,193 @@
+body {
+  background-image: url('https://i.pinimg.com/originals/37/45/c3/3745c3e50e0e529a2b4e0c78637e1ce3.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body,
+html {
+  background-image: image();
+  background-color: black;
+  height: 100%;
+  margin: 0;
+}
+.planet {
+  height: 20vw;
+  width: 20vw;
+  background-color: rgb(201, 175, 139);
+  border-radius: 50%;
+}
+.content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.d1 {
+  height: 100%;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.d2 {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.d3 {
+  height: 100%;
+  width: 35%;
+}
+
+.butt{
+  border: 3px solid beige;
+  border-radius: 20px;
+  height: 5vh;
+  width: 20vw;
+  margin: 2vh;
+ 
+  font-size: medium;
+}
+.butt1{
+  background-color: rgb(165, 227, 255);
+}
+.butt2{
+  background-color: rgb(145, 247, 117);
+}
+.butt3{
+  background-color: rgb(238, 154, 51);
+}
+.butt4{
+  background-color: rgb(240, 230, 95);
+}
+.butt5{
+  background-color: rgb(95, 255, 162);
+}
+.add{
+  border: 3px solid beige;
+    height: 5vh;
+    width: 3vw;
+    border-radius:20px ;
+    background-color: beige ;
+    font-size: large;
+}
+.sub{
+  border: 3px solid beige;
+  height: 5vh;
+    width: 3vw;
+    border-radius:20px ;
+    background-color: beige;
+    font-size: large;
+}
+.planet-name {
+  margin-top: 1vh;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+}
+.butt:hover, .add:hover, .sub:hover {
+  transform: scale(1.05);
+}
+.add:active,.sub:active {
+  transform: scale(0.95);   
+  background-color: #d1c0a1;  
+  border-color:#d1c0a1 ;
+}
+
+/* break */
+.health-bar-container {
+  width: 100%;
+  height: 3vh;
+  background-color: #ff0000;
+  border-radius: 10px;
+  margin-top: 2vh;
+}
+
+.health-bar {
+  height: 100%;
+  width: 100%; /* Full width always */
+  border-radius: 10px;
+  transition: background-color 0.5s;
+}
+.health-info {
+  margin-top: 2vh;
+  text-align: center;
+}
+
+.health-message {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.health-percentage {
+  font-size: 1.2rem;
+  color: white;
+}
+@media (max-width: 768px) {
+  .d1, .d2, .d3 {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .butt {
+    width: 80%;
+    font-size: smaller;
+  }
+
+  .add, .sub {
+    width: 40%;
+  }
+
+  .planet-name {
+    font-size: 1.5rem;
+  }
+
+  .health-bar-container {
+    height: 4vh;
+  }
+
+  .health-message {
+    font-size: 1.2rem;
+  }
+
+  .health-percentage {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .planet {
+    height: 25vw;
+    width: 25vw;
+  }
+
+  .butt {
+    height: 4vh;
+    width: 90%;
+  }
+
+  .add, .sub {
+    width: 50%;
+  }
+
+  .planet-name {
+    font-size: 1.2rem;
+  }
+
+  .health-bar-container {
+    height: 5vh;
+  }
+
+  .health-message {
+    font-size: 1rem;
+  }
+
+  .health-percentage {
+    font-size: 0.9rem;
+  }
+}
